@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Rip World - официальный сайт</title>
+  <meta name="description" content="Официальный сайт Rip World - игровое Discord-приложение с питомцами, гильдиями, заданиями, экономикой и другими системами.">
+  <meta name="theme-color" content="#08080c">
+  <meta property="og:title" content="Rip World - официальный сайт">
+  <meta property="og:description" content="Твой мир. Твоя история.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="orb orb-a" aria-hidden="true"></div>
+  <div class="orb orb-b" aria-hidden="true"></div>
+
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Rip World">
+        <span class="brand-mark">RW</span>
+        <span class="brand-name"><b>RIP</b> WORLD</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a class="active" href="#top">Главная</a>
+        <a href="#systems">Системы</a>
+        <a href="#docs">Документы</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="top-actions">
+        <a class="icon-btn" id="applicationLink" href="https://discord.com/developers/applications/1348290855475220543/information" target="_blank" rel="noopener noreferrer" title="Открыть приложение Rip World в Discord" aria-label="Открыть приложение Rip World в Discord">✦</a>
+        <a class="mini-btn" href="terms.html">Условия</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section reveal">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span> OFFICIAL PROJECT</div>
+          <h1>Твой мир.<br><span>Твоя история.</span></h1>
+          <p class="hero-lead">Rip World собирает игровые системы прямо в Discord: питомцы, развитие, гильдии, задания, экономика, музыка и другие механики в едином мире.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#systems">Исследовать мир <span>↗</span></a>
+            <a class="btn" href="#docs">Открыть документы</a>
+          </div>
+          <div class="hero-pills">
+            <span>DISCORD APP</span><span>RPG SYSTEMS</span><span>LIVE WORLD</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Визуальное ядро Rip World">
+          <div class="core-ring ring-1"></div>
+          <div class="core-ring ring-2"></div>
+          <div class="core-ring ring-3"></div>
+          <div class="core-card glass">
+            <div class="core-top"><span>RW // WORLD CORE</span><span>01</span></div>
+            <div class="core-logo project-avatar-wrap"><img class="project-avatar" src="avatar.png" alt="Аватар Rip World" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="avatar-fallback">RW</span></div>
+            <div class="core-caption">ENTER<br><b>RIP WORLD</b></div>
+            <div class="core-lines"><i></i><i></i><i></i></div>
+          </div>
+          <div class="floating-tag tag-a">✦ PETS</div>
+          <div class="floating-tag tag-b">⚔ BATTLES</div>
+          <div class="floating-tag tag-c">♜ GUILDS</div>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Системы проекта">
+        <div class="ticker-track">
+          <span>PETS</span><b>•</b><span>GUILDS</span><b>•</b><span>QUESTS</span><b>•</b><span>BATTLE PASS</span><b>•</b><span>SHOP</span><b>•</b><span>MUSIC</span><b>•</b><span>ACHIEVEMENTS</span><b>•</b><span>PETS</span><b>•</b><span>GUILDS</span><b>•</b>
+        </div>
+      </section>
+
+      <section id="systems" class="section reveal">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">01 / СИСТЕМЫ</div>
+            <h2>Один мир - много механик.</h2>
+            <p>Выбирай направление и смотри, из чего складывается Rip World.</p>
+          </div>
+          <label class="search-box">
+            <span>⌕</span>
+            <input id="systemSearch" type="search" placeholder="Поиск по системам..." autocomplete="off">
+          </label>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Категории систем">
+          <button class="tab active" data-tab="all" role="tab">Все</button>
+          <button class="tab" data-tab="progress" role="tab">Развитие</button>
+          <button class="tab" data-tab="social" role="tab">Сообщество</button>
+          <button class="tab" data-tab="utility" role="tab">Сервис</button>
+        </div>
+
+        <div class="system-grid" id="systemGrid">
+          <article class="system-card glass" data-cat="progress" data-search="питомцы яйца развитие коллекция">
+            <div class="system-index">01</div><div class="system-icon">🐾</div>
+            <h3>Питомцы</h3><p>Яйца, редкости, коллекция, характеристики и развитие питомцев.</p><span class="system-link">EXPLORE <b>↗</b></span>
+          </article>
+          <article class="system-card glass" data-cat="social" data-search="гильдии сообщества казна уровни">
+            <div class="system-index">02</div><div class="system-icon">♜</div>
+            <h3>Гильдии</h3><p>Игровые сообщества со своим пространством, уровнями, казной и бонусами.</p><span class="system-link">EXPLORE <b>↗</b></span>
+          </article>
+          <article class="system-card glass" data-cat="progress" data-search="бои бой энергия характеристики">
+            <div class="system-index">03</div><div class="system-icon">⚔</div>
+            <h3>Бои</h3><p>Энергия и характеристики питомцев используются в отдельных боевых сценариях.</p><span class="system-link">EXPLORE <b>↗</b></span>
+          </article>
+          <article class="system-card glass" data-cat="progress" data-search="задания ежедневные недельные награды прогресс">
+            <div class="system-index">04</div><div class="system-icon">◎</div>
+            <h3>Задания</h3><p>Ежедневные и недельные цели, прогресс и награды для развития профиля.</p><span class="system-link">EXPLORE <b>↗</b></span>
+          </article>
+          <article class="system-card glass" data-cat="progress" data-search="battle pass достижения уровни награды">
+            <div class="system-index">05</div><div class="system-icon">◈</div>
+            <h3>Battle Pass</h3><p>Отдельная линия прогресса с уровнями и наградами внутри игрового мира.</p><span class="system-link">EXPLORE <b>↗</b></span>
+          </article>
+          <article class="system-card glass" data-cat="utility" data-search="магазин инвентарь яйца предметы экономика">
+            <div class="system-index">06</div><div class="system-icon">▣</div>
+            <h3>Магазин и инвентарь</h3><p>Игровая валюта, яйца, предметы и ресурсы, связанные с другими системами.</p><span class="system-link">EXPLORE <b>↗</b></span>
+          </article>
+          <article class="system-card glass" data-cat="utility" data-search="музыка плеер голос статистика soundcloud">
+            <div class="system-index">07</div><div class="system-icon">♫</div>
+            <h3>Музыка</h3><p>Управление воспроизведением и единый музыкальный интерфейс прямо в Discord.</p><span class="system-link">EXPLORE <b>↗</b></span>
+          </article>
+          <article class="system-card glass" data-cat="social" data-search="голос статистика сообщения активность достижения">
+            <div class="system-index">08</div><div class="system-icon">⌁</div>
+            <h3>Статистика и достижения</h3><p>Учет активности, голосовой статистики и достижений для игрового прогресса.</p><span class="system-link">EXPLORE <b>↗</b></span>
+          </article>
+        </div>
+        <div class="empty-search" id="emptySearch" hidden>Ничего не найдено. Попробуй другое слово.</div>
+      </section>
+
+      <section class="section reveal feature-split">
+        <div class="glass terminal-card">
+          <div class="terminal-head"><span><i></i><i></i><i></i></span><b>RIP_WORLD://</b><span>READY</span></div>
+          <div class="terminal-body">
+            <p><em>01</em> / загрузка игрового ядра...</p>
+            <p><em>02</em> / подключение систем...</p>
+            <p><em>03</em> / синхронизация прогресса...</p>
+            <p class="terminal-ok"><em>04</em> / мир готов.</p>
+            <div class="terminal-prompt"><span>rw@world</span>:~$ <b>start_story</b><span class="blink">▌</span></div>
+          </div>
+        </div>
+        <div class="feature-copy">
+          <div class="eyebrow">02 / КОНЦЕПЦИЯ</div>
+          <h2>Не набор команд.<br><span>Целая система.</span></h2>
+          <p>Rip World задуман как единый игровой слой поверх Discord. Питомцы, экономика, задания, гильдии и другие функции связаны между собой, а интерфейс делает их доступными через одно приложение.</p>
+          <div class="mini-stats"><div><b>∞</b><span>возможности</span></div><div><b>RW</b><span>единое ядро</span></div><div><b>24/7</b><span>Discord-среда</span></div></div>
+        </div>
+      </section>
+
+      <section id="docs" class="section reveal docs-section">
+        <div class="section-heading"><div><div class="eyebrow">03 / ДОКУМЕНТЫ</div><h2>Официальная информация.</h2><p>Условия использования и политика конфиденциальности проекта.</p></div></div>
+        <div class="docs-grid">
+          <a class="doc-card glass" href="terms.html"><span class="doc-num">A</span><div><small>OFFICIAL</small><h3>Условия использования</h3><p>Правила использования Rip World, игровые ограничения и общие положения.</p></div><b class="doc-arrow">↗</b></a>
+          <a class="doc-card glass" href="privacy.html"><span class="doc-num">B</span><div><small>OFFICIAL</small><h3>Политика конфиденциальности</h3><p>Какие данные могут использоваться и для чего они нужны.</p></div><b class="doc-arrow">↗</b></a>
+          <a class="doc-card glass" href="https://discord.com/developers/applications/1348290855475220543/information" target="_blank" rel="noopener noreferrer"><span class="doc-num">C</span><div><small>DISCORD APP</small><h3>Приложение Rip World</h3><p>Открыть страницу приложения Discord, где размещаются официальные ссылки проекта.</p></div><b class="doc-arrow">↗</b></a>
+        </div>
+      </section>
+
+      <section id="faq" class="section reveal faq-section">
+        <div class="section-heading"><div><div class="eyebrow">04 / FAQ</div><h2>Частые вопросы.</h2><p>Быстрые ответы по сайту и документам.</p></div></div>
+        <div class="faq-list">
+          <details class="glass" open><summary>Где используется Rip World?</summary><p>Rip World работает как Discord-приложение и предоставляет игровые и вспомогательные функции внутри Discord.</p></details>
+          <details class="glass"><summary>Где находятся официальные документы?</summary><p>На этом сайте опубликованы отдельные страницы с условиями использования и политикой конфиденциальности.</p></details>
+          <details class="glass"><summary>Можно ли использовать сайт с телефона?</summary><p>Да. Сайт адаптирован под мобильные экраны, а интерактивные элементы рассчитаны на мышь и сенсорное управление.</p></details>
+          <details class="glass"><summary>Почему некоторые функции могут меняться?</summary><p>Состав функций, игровые параметры и отдельные ограничения проекта могут обновляться по мере развития Rip World.</p></details>
+        </div>
+      </section>
+
+      <section class="cta section reveal">
+        <div class="cta-glow"></div>
+        <div><div class="eyebrow">RIP WORLD</div><h2>Вход в мир начинается с одной кнопки.</h2><p>Изучай системы, знакомься с правилами и следи за развитием проекта.</p></div>
+        <div class="cta-actions"><a class="btn btn-primary" href="#systems">Исследовать <span>↗</span></a><button class="btn" type="button" data-copy-page>Скопировать адрес</button></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div><a class="brand footer-brand" href="#top"><span class="brand-mark">RW</span><span class="brand-name"><b>RIP</b> WORLD</span></a><p>Твой мир. Твоя история.</p></div>
+      <div class="footer-links"><a href="terms.html">Условия</a><a href="privacy.html">Конфиденциальность</a><a href="https://discord.com/developers/applications/1348290855475220543/information" target="_blank" rel="noopener noreferrer">Приложение Discord</a><a href="#top">Наверх ↑</a></div>
+      <div class="footer-copy">© <span id="year"></span> Rip World</div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
